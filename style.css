@@ -22,12 +22,12 @@
       min-height:100vh;
       display:flex;
       align-items:center;
-      justify-content:center;
+      justify-content:flex-start;
       padding:24px;
+      flex-direction: column;
     }
     .wrap{width:min(980px, 100%)}
     header{
-      display:flex;
       gap:12px;
       align-items:flex-start;
       justify-content:space-between;
@@ -165,14 +165,14 @@
       box-shadow: 0 0 0 3px rgba(120,170,255,.12);
     }
     .muted{color:var(--muted)}
-    footer{
-      margin-top:12px;
-      color:var(--muted);
-      font-size:12px;
-      opacity:.9;
-    }
-
- 
-.footer {
-  opacity: 0.7;
+  
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 18px 10px;
+  margin-top: 28px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
+
