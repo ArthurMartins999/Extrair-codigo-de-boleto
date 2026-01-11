@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Extrator de Código de Pagamento</title>
+ 
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Extrator de Código de Pagamento</h1>
+        <p class="sub">Cole a mensagem do seguro (WhatsApp/SMS/e-mail) e o site tenta extrair automaticamente a <b>linha digitável do boleto</b> e/ou o <b>PIX copia e cola</b>.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <label for="input">Mensagem recebida</label>
+        <textarea id="input" placeholder="Cole aqui a mensagem do seguro..."></textarea>
+
+        <div class="row">
+          <button class="primary" id="btnExtract">Extrair códigos</button>
+          <button class="ghost" id="btnClear">Limpar</button>
+          <button class="ghost" id="btnExample">Exemplo</button>
+        </div>
+
+        <footer>Privado: tudo roda no seu navegador. Nada é enviado para servidor.</footer>
+      </section>
+
+      <section class="card out">
+        <div class="pill" id="statusPill">
+          <span class="dot" id="statusDot"></span>
+          <span id="statusText">Cole um texto e clique em “Extrair”.</span>
+        </div>
+
+        <div>
+          <div class="muted" style="font-size:13px;margin-bottom:6px">Encontrados</div>
+          <div class="select" id="foundList"></div>
+          <p class="mini" id="hint"></p>
+        </div>
+
+        <div>
+          <div class="muted" style="font-size:13px;margin-bottom:6px">Código selecionado</div>
+          <div class="codebox" id="output">(nada ainda)</div>
+          <div class="row" style="margin-top:10px">
+            <button id="btnCopy">Copiar</button>
+            <button class="ghost" id="btnFormat">Formatar</button>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+      © 2026 Desenvolvido por <strong>Arthur Martins</strong>
+    </footer>
+
+</body>
+
+</html>
